@@ -2,8 +2,6 @@ setTimeout(function(){
     $('.loader').addClass('done');
 }, 3500);
 
-
-
 $(document).ready(function () {
     var images = [];
     var imageIndex = 0;
