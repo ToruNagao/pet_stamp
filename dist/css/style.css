@@ -595,6 +595,13 @@ section#product #red-circle {
     line-height: 60px;
 }
 
+section#product #red-circle #plus-sign {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .curtain-container {
     position: relative;
     margin-left: 5vw;
