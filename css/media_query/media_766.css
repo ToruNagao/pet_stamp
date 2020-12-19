@@ -1,0 +1,29 @@
+@media (max-width: 766px) {
+    section#beacon .container .row:nth-of-type(2) .wrapper{
+        margin-top: 20%;
+        margin-right: 25%;
+    }
+
+    
+    section#comparison .row{
+        display: block;
+    }
+
+
+    section#beacon p#bubble-3 {
+        font-size: 0.8rem;
+        color: white;
+        padding: 10px;
+        width: 150px;
+        position: absolute;
+        border: white solid 2px;
+        border-radius: 15px;
+        top:150px;
+        text-align: left;
+        left: 40px;
+    }
+
+    section#scanner-link .caption {
+        display: none;
+    }
+}

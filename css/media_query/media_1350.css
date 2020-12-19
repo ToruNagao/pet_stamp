@@ -1,0 +1,9 @@
+@media (max-width: 1350px){
+    ul#nav-menu {
+        padding-right: 0%;
+    }
+
+    section#product > .row:nth-child(2) {
+    margin-top: 230px;
+}
+}

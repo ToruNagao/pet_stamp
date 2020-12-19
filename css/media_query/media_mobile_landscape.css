@@ -1,0 +1,48 @@
+@media only screen and (max-device-width: 750px) and (orientation: landscape) {
+    nav {
+        line-height: 0px;
+    }
+    header #white-box {
+        width: 75%;
+    }
+    header a.scroll-down-link {
+        right: 0;
+        bottom: 50px;
+    }
+    #mobile-menu, #mobile-menu .menu-container {
+        display: block;
+    }
+    #mobile-menu .menu-container.visible {
+        padding-top: calc(100vh/7);
+    }
+    div#fixed-nav-container.visible {
+        display: none !important;
+    }
+
+    section#benefit .grid-container .grid .last-grid{
+        position: relative;
+        right: 0%;
+        left: 0%;
+    }
+
+    section#comparison img.logo-img {
+   
+        margin: 0% auto 5% auto;
+
+    }
+    section#opt-in {
+        height: 140vh;
+    }
+    section#opt-in .heading h1 {
+        font-size: 2.3rem;
+    }
+    section#opt-in p {
+        max-width: 100%;
+        margin: 2% 0%;
+    }
+    section#usecase .grid .each .container {
+        max-width: 100%;
+        left: 0 !important;
+        right: 0 !important;
+    }
+}
