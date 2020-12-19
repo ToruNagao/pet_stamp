@@ -16,15 +16,7 @@ $(document).ready(function () {
         images.push(imagePath);
         images[imageIndex].src = imagePath;
         images[imageIndex].addEventListener('load', loadCounter, function () {
-
         })
-    }
-
-    function loadingImageHandler(i) {
-        setTimeout(function () {
-            $('#loading-logo-container').css('opacity', i / 127);
-        }
-            , i * 10);
     }
 
     function loadCounter() {
@@ -64,10 +56,10 @@ $(document).ready(function () {
         duration: 600,
         triggerHook: 0.7,
     })
-        // .addIndicators()
-        .setTween(tweenScannerGif)
-        // .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
+    // .addIndicators()
+    .setTween(tweenScannerGif)
+    // .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
 });
 
 
