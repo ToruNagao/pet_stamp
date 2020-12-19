@@ -1,0 +1,85 @@
+@media (max-width: 920px) {
+
+    #mobile-menu{
+        display: block !important;
+    }
+
+    div#fixed-nav-container.visible {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    nav ul#nav-menu {
+        display: none;
+    }
+
+    header #white-box{
+        width: 70%;
+    }
+
+    section#product img#product-scanner {
+        left: 150px;
+    }
+    .curtain-container {
+        margin-left: -40px;
+    }
+    #red-circle {
+        display: none;
+
+          }
+    section#product .row p {
+        line-height: 2;
+        font-size: 0.9rem;
+    }
+    section#beacon .container .row:nth-of-type(1) .col:nth-of-type(2) {
+        width: 60%;
+        /* margin-left: 100px; */
+    }
+
+    section#beacon ul#bubble-2 {
+        z-index: 10;
+        top: 180px;        
+    }
+
+    .heading-side-right {
+        transform: rotate(-90deg) translateY(30px)
+    }
+    section#benefit h2.heading-side {
+        transform: rotate(-90deg) translateY(-100px);
+    }
+    section#opt-in input[type="email"] {
+        width: 70%;
+    }
+    
+    section#usecase .grid .each .container {
+        max-width: 65%;
+        margin: 20px;
+    }
+    /* section#usecase .grid .each .container p {
+        background: rgba(255, 255, 255, 0.8);
+       
+    } */
+
+    section#usecase .grid .each .container h4{
+        margin: 10px 0;
+    }
+
+    section#team .flex-center .col:nth-of-type(1){
+        padding-left: 0;
+    }
+
+    section#team .flex-center .col:nth-of-type(2){
+        padding-right: 0;
+    }
+
+    section#advisors .row > .col{
+        min-height: 140px;
+    }
+
+    section#advisors .advisor{
+        padding: 10px 10px 0px 10px;
+    }
+
+}

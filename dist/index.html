@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/variables.css" defer>
+    <link rel="stylesheet" type="text/css" href="font/font.css" async>
+    <link rel="stylesheet" type="text/css" href="css/style.css" async>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" async>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_grid.css" async>
+    <link rel="stylesheet" type="text/css" href="css/loader.css" async>
+    <link rel="stylesheet" type="text/css" href="css/mailchimp_custom.css" defer>
+
+    <!-- Media Queries -->
+     <link rel="stylesheet" type="text/css" href="css/media_query/media_1350.css" media="screen and (max-width: 1350px)">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_1050.css" media="screen and (max-width: 1050px)">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_920.css" media="screen and (max-width: 920px)">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_740.css" media="screen and (max-width: 740px)">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_766.css" media="screen and (max-width: 766px)">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_630.css" media="screen and (max-width: 630px)">
+    <link rel="stylesheet" type="text/css" href="css/mobile_menu.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_mobile_480.css"
+        media="only screen and (max-device-width: 480px) and (orientation: portrait)">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_mobile_360.css"
+        media="only screen and (max-device-width: 360px) and (orientation: portrait)">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_mobile_landscape.css"
+        media="only screen and (max-device-width: 750px) and (orientation: landscape)">
+
+    <!-- Font Awesome CDN -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- jQuery CDN -->
+    <script src="./script/jquery-3.4.1.min.js"> </script>
+
+    <!-- ScrollMagic and GSAP -->
+    <script src="./scroll-magic-kit/ScrollMagic.min.js"></script>
+    <script src="./scroll-magic-kit/TimelineLite.min.js"></script>
+    <script src="./scroll-magic-kit/TimelineMax.min.js"></script>
+    <script src="./scroll-magic-kit/TweenLite.min.js"></script>
+    <script src="./scroll-magic-kit/TweenMax.min.js"></script>
+    <script src="./scroll-magic-kit/animation.gsap.js"></script>
+    <script src="./scroll-magic-kit/debug.addIndicators.min.js"></script>
+
+
+    <!-- AOS -->
+
+    <script src="./script/animation.js" async></script>
+    <script src="./script/rotate_scanner.js" defer></script>
+    <script src="./script/mobile_menu.js" async></script>
+
+
+    <title>Pet Stamp - Platform for all pet lovers</title>
+
+</head>
+<style>
+
+</style>
+
+<body ontouchstart="">
+    <header>
+        <div id="overlay" class=""></div>
+        <nav>
+            <img src="./img/logo_h_white.png" id="nav-logo" alt="">
+            <ul id='nav-menu'>
+                <a href="#benefit-anchor">
+                    <li style="padding-left: 40px">BENEFITS</li>
+                </a>
+                <a href="#product-anchor">
+                    <li>APP + SCANNER</li>
+                </a>
+                <a href="#comparison-anchor">
+                    <li>SERVICES</li>
+                </a>
+                <a href="#perks-anchor">
+                    <li>PREMIUM</li>
+                </a>
+                <a href="#team-anchor">
+                    <li>TEAM</li>
+                </a>
+                <a href="#benefit-anchor">
+                    <li><span>JOIN US</span></li>
+                </a>
+            </ul>
+        </nav>
+        <div id="fixed-nav-container">
+            <div id="fixed-nav">
+                <ul id='nav-menu'>
+                    <a href="#benefit-anchor">
+                        <li id="benefit">BENEFITS</li>
+                    </a>
+                    <a href="#product-anchor">
+                        <li id="app">APP + SCANNER</li>
+                    </a>
+                    <a href="#comparison-anchor">
+                        <li id="comparison">SERVICES</li>
+                    </a>
+                    <a href="#perks-anchor">
+                        <li id="premium">PREMIUM</li>
+                    </a>
+                    <a href="#team-anchor">
+                        <li id="team">TEAM</li>
+                    </a>
+                    <a href="#opt-in-anchor">
+                        <li id="join-us"><span>JOIN US</span></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mobile-menu">
+            <div class="icon-container">
+                <div id="bar-1" class="bar"></div>
+                <div id="bar-2" class="bar"></div>
+                <div id="bar-3" class="bar"></div>
+            </div>
+            <div class="menu-container">
+                <div class="menu-items">
+                    <div>
+                        <a href="#benefit-anchor" onclick="closeMobileMenu()">
+                            BENEFITS
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#product-anchor" onclick="closeMobileMenu()">
+                            APP + SCANNER
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#comparison-anchor" onclick="closeMobileMenu()">
+                            SERVICES
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#perks-anchor" onclick="closeMobileMenu()">
+                            PREMIUM
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#team-anchor" onclick="closeMobileMenu()">
+                            TEAM
+                        </a>
+                    </div>
+                    <div class="emphasis">
+                        <a href="#opt-in-anchor" onclick="closeMobileMenu()">
+                            JOIN US
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top-btn">
+
+        </div>
+
+        <div id="caption" class="content-area">
+            <!-- <h3><span class="font-white">Building</span></h3> -->
+            <h3><span class="font-white">AI-Driven Platform where</span></h3>
+            <h1><span class="font-red">Humans & Pets</span></h1>
+            <h3><span class="font-red">can live happily together</span></h3>
+        </div>
+        <div id="play-store-badge">
+            <img src="./img/google-play-badge-soon.png" alt="">
+            <img src="./img/app-store-badge-soon.png" alt="">
+        </div>
+        <div id="white-box">
+
+        </div>
+        <a href="#benefit-anchor" class="scroll-down-link">
+            <h5 class="fade-in">&#8592; DISCOVER MORE</h5>
+        </a>
+    </header>
+
+    <div id="benefit-anchor"></div>
+    <section id="benefit" class="content-area">
+        <h2 class="heading-side-left">
+            BENEFITS
+        </h2>
+
+        <div class="grid-container">
+            <div class="grid">
+                <div class="">
+                    <img src="./img/microchip_icon.png" alt="">
+                    <h4>Free Microchip<br>Database</h4>
+                    <p>Register your pet will get you a whole new experience like special offers and personalized
+                        assistance.</p>
+                </div>
+                <div class="">
+                    <img src="./img/pet_stamp_app_icon.png" alt="">
+                    <h4>Pet Stamp<br>App</h4>
+                    <p>Manage pet and micorchip infomation, adoption, marketing special offers and more features.</p>
+                </div>
+                <div class="">
+                    <img src="./img/beacon_icon.png" alt="">
+                    <h4>Beacon Equipped Scanner</h4>
+                    <p>Instant paring with your mobile. Building a scanner network to protect pets and owners.</p>
+                </div>
+                <div class="">
+                    <img src="./img/collar_icon.png" alt="">
+                    <h4>Adoption<br>& Return</h4>
+                    <p>Achieve 100% reunification by connecting shelters, businsses, people, and pets.</p>
+                </div>
+                <div class="">
+                    <img src="./img/paw_icon.png" alt="">
+                    <h4>No Unethical<br>Euthanization</h4>
+                    <p>Provide services, supports, education and information for not giving up pets.</p>
+                </div>
+                <div class="">
+                    <img src="./img/owner_pet_icon.png" alt="">
+                    <h4>Power of<br>Network</h4>
+                    <p>Link between pet owners, animal shelters and pet care industry in one place.</p>
+                </div>
+                <div class="">
+                    <img src="./img/house_icon.png" alt="">
+                    <h4>Marketing<br>& Support</h4>
+                    <p>Provide marketing tools to help all pet related services to engage the right customers.</p>
+                </div>
+                <div class="">
+                    <img src="./img/event_icon.png" alt="">
+                    <h4>Events</h4>
+                    <p>Create and announce pet events, and connect with supporters and volunteers.</p>
+                </div>
+                <div class="">
+                    <img src="./img/chat_icon.png" alt="">
+                    <h4>Emergency Tool</h4>
+                    <p>Alert for natural disaster by giving region specific information via Pet Stamp app.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <div id="product-anchor"></div>
+    <section id="product">
+        <div class="background">
+            <div class="img-container">
+                <!-- <img src="img/cat_bg.jpg" alt="" id="product-bg"> -->
+            </div>
+
+            <div class="content-area">
+                <div class="container">
+                    <div class="heading">
+                        <h1>A step into the future</h1>
+                        <h4 class="line-after">for Pet Lovers</h4>
+                    </div>
+                    <div class="row product-image-container">
+                        <div class="col-md-6 col">
+                            <div class="curtain-container">
+                                <div class="wrapper">
+                                    <img src="./img/product_app_0_compressed.png" alt="">
+                                </div>
+                                <div class="wrapper">
+                                    <img src="./img/product_app_compressed.png" alt="">
+                                </div>
+                                <div class="wrapper">
+                                    <img src="./img/product_app_2_compressed.png" alt="">
+                                </div>
+                                <div class="wrapper">
+                                    <img src="./img/product_app_3_compressed.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col">
+                            <img src="./img/product_scanner_compressed.png" alt="" id="product-scanner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div id="red-circle">
+                <h3>+</h3>
+            </div>
+                <div class="col col-md-6 col-sm-6">
+                    <h2>Pet Stamp App</h2>
+                    <h4>Free to download</h4>
+                    <h4>Available on iOS and Android</h4>
+                    <h4>Benefits for dogs and cats owners</h4>
+                    <hr>
+                    <p class=''>
+                        Free pet registry & managment for all your pets</br>
+                        Pet health log, e-Veterinarian & related services</br>
+                        Business, events & perks offers. </br>
+                        Location based lost and rescued pet information</br>
+                        Adoption opportunities & finding rightful owners</br>
+                        Communication tool with messages & emergency alert</br>
+                        Secure traceability & tranceparency</br>
+                    </p>
+                </div>
+                <div class="col col-md-6 col-sm-6">
+                    <div class="mobile-visible media-740-visible">
+                        <img src="./img/product_scanner_compressed.png" alt="">
+                    </div>
+                    <h2>Smart Scanner</h2>
+                    <h4>One gadget, two uses</h4>
+                    <h4>Connect to phone app via bluetooth/USB</h4>
+                    <h4>Beacon equippted</h4>
+                    <hr>
+                    <p class=''>
+                        Water-Resistant & durability minded design</br>
+                        <span>Scan Mode</span>: Scan microchip number</br>
+                        <span>Walking Mode</span>: Verify that pets are really taken out for walk</br>
+                        <span>Medical Mode</span>: Pull and add medical records</br>
+                        <span>Check-in Mode</span>: Event and business check-in</br>
+                        <span>Beacon Mode</span>: Proximity marketing</br>
+                        <span>In-and-Out Mode</span>: Animal inventory management</br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="beacon-anchor"></div>
+    <section id="beacon">
+
+        <h1 class="heading-side-right line-after font-white">Beacon</h1>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 col">
+                    <img src="./img/Wireless.png" alt="" id="scanner-gif-bg">
+                    <!-- <img src="/img/product_beacon.png" alt=""> -->
+                    <img src="./img/scanner_360_compressed/_Layer-1.png" id="scanner-gif" alt=""
+                        style="height: 400px; width: auto;">
+                </div>
+                <div class="col-md-8 col">
+                    <p class="font-white">
+                        <span class="bold">
+                            Beacon is a wireless transmitter using low-energy bluetooth
+                            to send signals to other smart devices nearby.
+                        </span>
+                    </p>
+                    <p class="p-lg font-white">
+                        By using our <span class="bold">Beacon Equipped Scanner</span> you can send
+                        messages to nearby devices as a marketing tool.
+                        Also in emergencies, as when a natural disaster occurs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7 col-sm-6 col-xs-12">
+                    <div class="wrapper-relative">
+                        <div class="col col-md-6 col-sm-7 col-xs-6">
+
+
+                            <h5>Message & Alerts</h5>
+                            <p id='bubble-1'>
+                                Suita Sports facility is accepting up to
+                                40 housholds with pets.
+                            </p>
+
+                            <img src="./img/beacon_japan_map.gif" alt="" id="map">
+                        </div>
+                        <div class="col col-md-6 col-sm-5 col-xs-6">
+                            <h5>GEO Fencing</h5>
+
+                            <ul id="bubble-2">
+                                <li>Perks offer to nearby areas.</li>
+                                <li>Events & study session info.</li>
+                                <li>Questionnarie, evaluation, vote.</li>
+                                <li>Pet data for adoption/foster.</li>
+                                <li>Check-in & loyality program.</li>
+                                <li>Hospital questionnaire & waiting time.</li>
+                                <li>Volunteer activities announcement.</li>
+                                <li>Pet related infomation in airports & public facilities.</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col col-md-5 col-sm-6 col-xs-12">
+                    <div class="wrapper">
+                        <h5>Marketing Tool</h5>
+                        <p id="bubble-3">
+                            Only for today! <span>Pet Store Shippo</span> 20% discount for
+                            cat toilet sand.
+                        </p>
+                        <img src="./img/beacon_marketing.png" alt="" id="emergency">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="scanner-map">
+        <div class="content-area">
+            <div class="heading">
+                <h4 class="line-after">Our approach, achieve</h4>
+                <h1 class="">100% Reunification</h1>
+            </div>
+
+            <div class="row">
+                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h4>
+                        We wil build <span class="font-red">Scanner Network</span> first to protect pets and owners.
+                    </h4>
+                    <p>
+                        Desired reunifications only. Otherwise, abandonment info will be recorderd.
+                    </p>
+                </div>
+                <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img src="./img/scanner_map.png" alt="" id="scanner-map">
+                </div>
+            </div>
+        </div>
+        <div class="row mobile-hide">
+            <div class="mobile-hide">
+                <img src="./img/icon_outer_white.png" alt="">
+                <div class="container">
+                    <div class="wrapper">
+                        <h2>1000-2500 Scanner<br> Spots in Tokyo</h2>
+                        <p>Animal Organizations, Rescues, Breeders, Vets, Pet Stores, Police Depertments.</p>
+                    </div>
+                    <hr>
+                    <div class="wrapper">
+                        <h4 class="font-red">Tokyo&#8594;Other cities&#8594;Global</h4>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="mobile-visible">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img src="./img/icon_outer_white.png" alt="">
+                </div>
+                <div class="col-xs-9">
+                    <h2>1000-2500 Scanner<br> Spots in Tokyo</h2>
+                    <p>Animal Organizations, Rescues, Breeders, Vets, Pet Stores, Police Depertments.</p>
+                </div>
+            </div>
+            <div class="row">
+                <hr>
+
+                <h4 class="font-red">Tokyo&nbsp; &nbsp; &#8594; &nbsp; &nbsp;Other cities &nbsp; &nbsp; &#8594; &nbsp;
+                    &nbsp;Global</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="scanner-link">
+        <h2 class="heading-side-left line-after">
+            One Account<br>Multiple Scanners
+        </h2>
+        <div class="content-area-l">
+            <div class="caption">
+                 <h4 class="font-red">You can manage all the acitivities by scanners that are associated with your account.
+            </div>
+            </h4>
+            <img src="./img/scanner_link.png" alt="" id="scanner-link">
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <img src="./img/bullet_check.png" alt="" id="bullet-check">
+                        <h6>
+                            <span class="font-red">Pet Owners</span> get notifications right away when someone scanned
+                            his/her pets.
+                            (when, where, who)
+                        </h6>
+                    </div>
+                    <div>
+                        <img src="./img/bullet_check.png" alt="" id="bullet-check">
+                        <h6>
+                            <span class="font-red">Pet Owners</span> can contact with a person who scanned a microchip
+                            impanted in their pet.
+
+
+                        </h6>
+                    </div>
+                    <div>
+                        <img src="./img/bullet_check.png" alt="" id="bullet-check">
+                        <h6>
+                            <span class="font-red">Pet Owners</span> can report when their pet is lost.
+
+
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="comparison">
+        <div id="comparison-anchor"></div>
+        <div class="content-area">
+            <div class="heading">
+                <h4 class="line-after">service comparison &</h4>
+                <h1 class="">Why Pet Stamp</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <img src="./img/logo_h.png" alt="" class="logo-img">
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <p>
+                        Pet Stamp service not only provides value when pets get lost,
+                        but it also provides value on an ongoing basis from when welcoming them as new family
+                        member.<br><br>
+                        We will use machine learning and AI (artificial intelligence) to interpret human and pet needs,
+                        give them better supports.<br><br>
+                    </p>
+                    <div class="row">
+                        <div class="col col-md-6 col-xs-6 font-red">
+
+
+                            <h6>Pet Stamp Registration.<br>Service (values) provided</h6>
+                        </div>
+                        <div class="col col-md-6 col-xs-6">
+
+
+                            <h6>Microchip Registration.<br>No service (value) provided</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="img-container">
+            <img src="./img/compare.png" alt="" style="width: 100%; margin-top:5%;">
+        </div>
+    </section>
+
+
+
+    <div id="usecase-anchor"></div>
+    <section id='usecase'>
+        <div class="heading">
+            <h4 class="line-before">whatever your needs are</h4>
+            <h1 class="mobile-hide">We got you covered</h1>
+            <h1 class="mobile-visible">We got you &nbsp; &nbsp;covered</h1>
+        </div>
+        <div class="grid">
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_1.jpg" alt="">
+                    <div class="container abs-right-1">
+                        <h4>Pet Owner</h4>
+                        <p>
+                            From keeping a health log, booking the best groomer in town, or finding your lost pet<br>
+                            <span>
+                                Pet Stamp can assist you with anything that you & your pet needs.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_2.jpg" alt="">
+                    <div class="container">
+                        <h4>Shelter</h4>
+                        <p>
+                            Using our scanner and database, a quick scan will reveal
+                            the owner of stray pets with a microchip.
+                            <br>
+                            <span>
+                                Also enable wider communication
+                                for adoption & recruiting volunteers.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_3.jpg" alt="">
+                    <div class="container abs-right-2 abs-right-mobile">
+                        <h4>Breeder</h4>
+                        <p>
+                            Easy log-keeping & easy-transactions
+                            for your business.<br>
+                            <span>
+                                Through log-keeping can also raise
+                                your in-app rating as a business.
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_4.jpg" alt="">
+                    <div class="container abs-left-2 abs-left-mobile">
+                        <h4 align="right">Veterinarian</h4>
+                        <p>
+                            A quick scan from the microchip will
+                            provide any shared medical records.<br>
+                            <span>
+                                Our e-Vet chatting services can also
+                                open a new line of communication
+                                with potencial costumers.
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_5.jpg" alt="">
+                    <div class="container abs-right-1">
+                        <h4>Pet Store</h4>
+                        <p>
+                            Scan & access our database for any
+                            shared information about your new
+                            arriving animals.<br>
+                            <span>
+                                Use our platform to market your
+                                business local and national.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_6.jpg" alt="">
+                    <div class="container">
+                        <h4>Other Pet Related Businesses</h4>
+                        <p>
+                            Groomer, pet hotels, dog walkers,
+                            pet food, toys, training...<br>
+                            <span>
+                                whatever your business is, as long as
+                                about pets, we can help you market
+                                in our platform.
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="perks-anchor"></div>
+    <section id="perks" style="background: #eff4f6">
+        <div class="content-area content-area-v">
+            <div class="heading">
+                <h4 class="line-after">
+                    special deals
+                </h4>
+                <h1 class="">
+                    Perks Service
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 col">
+                    <img src="./img/perks_1.png" alt="">
+                    <h4 class="abs-left-1">
+                        Pet Community
+                    </h4>
+                    <p>
+                        The most common reason for pet abandonment is financial. We will support pets and owners by
+                        providing special offers and services.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 col">
+                    <img src="./img/perks_2.png" alt="">
+                    <h4>
+                        Businesses
+                    </h4>
+                    <p>
+                        Premium users are accesible to the
+                        complete marketing tool for grow your
+                        business & generate new customers.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id="team-anchor"></div>
+    <section id="team">
+        <div class="content-area content-area-v">
+            <div class="heading">
+                <h4 class="line-after">about us & the</h4>
+                <h1>Team behind it</h1>
+            </div>
+
+            <div class="row flex-center">
+                <div class="col col-6-md col-sm-6 col-xs-12">
+                    <h4 class="font-red"><span>
+                            We are a San Fraicosco based start-up building a pet registry &
+                            Smart Microchip Scanner to support pets and owners.
+                        </span> </h4>
+
+                </div>
+                <div class="col col-6-md col-sm-6 col-xs-12">
+                    <p>
+                        <span>
+                            We provide sevices,
+                            support and infomation for not giving up pets.
+                        </span><br><br>
+                        <p>
+                            We help individual pet owners to find new homes for pets
+                            before bring in to the rescues and animal organizations for abandonment.<br>
+                            <span>Raise the reunion rate.</span><br>
+                            This makes it possible to save more dogs and cats that are being killed in shelters.
+                        </p>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row member-container">
+                <div class="col col-md-4 col-sm-4 col-xs-6">
+                    <div class="member">
+                        <img src="./img/yasu_profile.png" alt="">
+                        <h4 class="member-name">
+                            Yasu Fujii
+                        </h4>
+                        <h6 class="member-position">
+                            Founder
+                        </h6>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-4 col-xs-6">
+                    <div class="member">
+                        <img src="./img/toru_profile.png" alt="">
+                        <h4 class="member-name">
+                            Toru Nagao
+                        </h4>
+                        <h6 class="member-position">
+                            Co-Founder / Web Development
+                        </h6>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-4 col-xs-12">
+                    <div class="member">
+                        <img src="./img/sawako_profile.png" alt="">
+                        <h4 class="member-name">
+                            Sawako Norikoshi
+                        </h4>
+                        <h6 class="member-position">
+                            Co-Founder / PR
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="advisors">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Tracey Thurston
+                        </h5>
+                        <h5 class="advisor-position">
+                            Senior Director
+                        </h5>
+                        <p class="advisor-company">
+                            Humane Society of the United States
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yaz Iida
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            Rakuten USA
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yoshihiro Shimizu
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            EQBO INC.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Kazumi Iino
+                        </h5>
+                        <h5 class="advisor-position">
+                            US and Japanese Business Expert
+                        </h5>
+                        <p class="advisor-company">
+                            Former JETRO
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Paula Martins
+
+
+                        </h5>
+                        <h5 class="advisor-position">
+                            UI/UX Designer
+                        </h5>
+                        <p class="advisor-company">
+                            Design co
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Ai Kikuchi
+                        </h5>
+                        <h5 class="advisor-position">
+                            Professional Groomer in US and Japan
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col col-md-4 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Tracey Thurston
+                        </h5>
+                        <h5 class="advisor-position">
+                            Senior Director
+                        </h5>
+                        <p class="advisor-company">
+                            Human Society of the United States
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yaz Iida
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            Rakuten USA
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yoshihiro Shimizu
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            EQBO INC.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                    <div class="col col-md-4 col-sm-6 col-xs-6">
+                            <div class="advisor">
+                                <h5 class="advisor-name">
+                                    Kazumi Iino
+                                </h5>
+                                <h5 class="advisor-position">
+                                    US and Japanese Business Expert
+                                </h5>
+                                <p class="advisor-company">
+                                    Former JETRO
+                                </p>
+                            </div>
+                        </div>
+                    <div class="col col-md-4 col-sm-6 col-xs-6">
+                        <div class="advisor">
+                            <h5 class="advisor-name">
+                                Paula Martins
+                                
+                               
+                            </h5>
+                            <h5 class="advisor-position">
+                                UI/UX Designer
+                            </h5>
+                            <p class="advisor-company">
+                                Design co
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-md-3 col-sm-6 col-xs-6">
+                            <div class="advisor">
+                                <h5 class="advisor-name">
+                                    Ai Kikuchi
+                                </h5>
+                                <h5 class="advisor-position">
+                                    Professional Groomer in US and Japan
+                                </h5>
+                                <p class="advisor-company">
+        
+                                </p>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="row">
+                    
+                </div> -->
+            <!-- <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Tracey Thurston
+                        </h5>
+                        <h5 class="advisor-position">
+                            Senior Director
+                        </h5>
+                        <p class="advisor-company">
+                            Human Society of the United States
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yaz Iida
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            Rakuten USA
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yoshihiro Shimizu
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            EQBO INC.
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Kazumi Iino
+                        </h5>
+                        <h5 class="advisor-position">
+                            US and Japanese Business Expert
+                        </h5>
+                        <p class="advisor-company">
+                            Former JETRO
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Paula Martins
+                            
+                           
+                        </h5>
+                        <h5 class="advisor-position">
+                            UI/UX Designer
+                        </h5>
+                        <p class="advisor-company">
+                            Design co
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Frank Shin
+                        </h5>
+                        <h5 class="advisor-position">
+                            Japan Branch Office President
+                        </h5>
+                        <p class="advisor-company">
+                            INCREZ GLOBAL
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Tetsuya Nagaoka
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            LongHill Inc
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Kohei Toda
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            ZiNC INC. Former Lion Corporation
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Shoji Matsuki
+                        </h5>
+                        <h5 class="advisor-position">
+                            Auditor
+                        </h5>
+                        <p class="advisor-company">
+                            Shippo-mura Animal Organization-Kanagawa
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Junichi Iida
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            OPT Creation
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Naotaka Yano
+                        </h5>
+                        <h5 class="advisor-position">
+                            Veterinarian and Director
+                        </h5>
+                        <p class="advisor-company">
+                            VET'S - EHIME
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Takanori Kasai
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            SurfCar Inc
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Ken Matsubara
+                        </h5>
+                        <h5 class="advisor-position">
+                            Animal Welfara Consultant
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Ai Kikuchi
+                        </h5>
+                        <h5 class="advisor-position">
+                            Professional Groomer in US and Japan
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Asano San
+                        </h5>
+                        <h5 class="advisor-position">
+                            Breeder in Japan
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Masaoa Tatsuzaki
+                        </h5>
+                        <h5 class="advisor-position">
+                            Vice-Diretor
+                        </h5>
+                        <p class="advisor-company">
+                            Japanese Government
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <h2 class="heading-side-right line-after">
+            ADVISORS
+        </h2>
+
+    </section>
+
+    <div id="opt-in-anchor"></div>
+    <section id="opt-in" class="content-area content-area-v">
+        <!-- <img src="./img/sign_up_bg.png" alt=""> -->
+        <div class="heading">
+            <h4 class="line-after">join us to the</h4>
+            <h1>Community for Pet Lovers</h1>
+        </div>
+        <p>
+            The more people know about Pet Stamp,
+            the larger our community will become.
+            And the more we can do toghether for all the dogs and cats around us.
+            <span>Let's share the happines!</span>
+        </p>
+        <div class="sign-up">
+            <form
+                action="https://petnumber.us3.list-manage.com/subscribe/post?u=91edc2ac1798ecff62168b45e&amp;id=163dd5886e"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+
+                    <div class="mc-field-group">
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL"
+                            placeholder="complete your email">
+                    </div>
+
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_91edc2ac1798ecff62168b45e_163dd5886e" tabindex="-1" value=""></div>
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
+
+        </div>
+        </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="row" id="mc_embed_signup">
+            <div class="col col-md-6 col-sm-12 col-xs-4">
+                <h5 class="font-white">DOWNLOAD OUR APP FOR FREE &#8594;</h5>
+            </div>
+            <div class="col col-md-6 col-sm-12 col-xs-8">
+
+                <img src="./img/google-play-badge-soon.png" alt="">
+                <img src="./img/app-store-badge-soon.png" alt="">
+            </div>
+        </div>
+
+        </div>
+        <div class="row">
+            <ul id="footer-nav-menu">
+                <a href="#benefit-anchor">
+                    <li>BENEFITS</li>
+                </a>
+                <a href="#product-anchor">
+                    <li>APP + SCANNER</li>
+                </a>
+                <a href="#comparison-anchor">
+                    <li>SERVICES</li>
+                </a>
+                <a href="#perks-anchor">
+                    <li>PREMIUM</li>
+                </a>
+                <a href="#team-anchor">
+                    <li>TEAM</li>
+                </a>
+            </ul>
+        </div>
+        <div class="row">
+            <div>
+                <img src="./img/logo_h_white.png" id="footer-logo" alt="">
+            </div>
+            <div>
+                <p class="copy-right">&copy;PET STAMP 2019 ALL RIGHTS RESERVED.</p>
+
+            </div>
+        </div>
+    </footer>
+</body>

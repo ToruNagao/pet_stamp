@@ -1,0 +1,29 @@
+@media (max-width: 630px) {
+
+    
+
+
+    .abs-left-2, .abs-right-2{
+        left:0;
+        right: 0;
+    }
+    section#usecase .grid .each .container{
+        max-width: 100%;
+    }
+
+    section#usecase .grid .each .container p {
+        padding: 10px;
+
+    }
+
+  
+    section#beacon ul#bubble-2{
+        width: 180px;
+        top: 170px;
+        margin-bottom: 220px;
+    }
+    
+    section#comparison{
+        margin-top: 60%;
+    }
+}

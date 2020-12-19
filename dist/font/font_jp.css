@@ -1,0 +1,47 @@
+nav, h1, h2, h3 {
+    font-family: "M PLUS Rounded 1c";
+}
+
+h1{
+    font-size: 2.6rem !important;
+}
+
+h4, h5 {
+    font-family: "M PLUS Rounded 1c";
+}
+
+p, h6, ul, #mobile-menu {
+    font-family: "M PLUS Rounded 1c";
+}
+
+p .p-bold {
+    font-family: "M PLUS Rounded 1c";
+}
+
+p span {
+    font-family: "M PLUS Rounded 1c";
+}
+
+.font-red {
+    color: var(--custom-red) !important;
+}
+
+.font-white {
+    color: white !important;
+}
+
+#product h1 {
+    font-family: "M PLUS Rounded 1c";
+}
+
+input[type="email"], input[type="submit"] {
+    font-family: "M PLUS Rounded 1c";
+}
+
+h4.member-name {
+    font-family: "M PLUS Rounded 1c";
+}
+
+h6.member-position, h5.advisor-name, h5.advisor-position {
+    font-family: "M PLUS Rounded 1c";
+}

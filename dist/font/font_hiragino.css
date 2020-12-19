@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Hiragino;
+    src: url(./hiragino/hiragino_maru_pron_W4.ttc);
+    font-weight: 400;
+}
+
+nav, h1, h2, h3 {
+    font-family: "Hiragino";
+}
+
+h1{
+    font-size: 2.6rem !important;
+}
+
+h4, h5 {
+    font-family: "Hiragino";
+}
+
+p, h6, ul, #mobile-menu {
+    font-family: "Hiragino";
+}
+
+p .p-bold {
+    font-family: "Hiragino";
+}
+
+p span {
+    font-family: "Hiragino";
+}
+
+.font-red {
+    color: var(--custom-red) !important;
+}
+
+.font-white {
+    color: white !important;
+}
+
+#product h1 {
+    font-family: "Hiragino";
+}
+
+input[type="email"], input[type="submit"] {
+    font-family: "Hiragino";
+}
+
+h4.member-name {
+    font-family: "Hiragino";
+}
+
+h6.member-position, h5.advisor-name, h5.advisor-position {
+    font-family: "Hiragino";
+}

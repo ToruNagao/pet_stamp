@@ -1,0 +1,81 @@
+@font-face {
+    font-family: MuseoSans-100;
+    src: url(museosansrounded-100-webfont.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: MuseoSans-300;
+    src: url(museosansrounded-300-webfont.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: MuseoSans-500;
+    src: url(museosansrounded-500-webfont.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: MuseoSans-700;
+    src: url(museosansrounded-700-webfont.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: MuseoSans-900;
+    src: url(museosansrounded-900-webfont.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: MuseoSans-1000;
+    src: url(museosansrounded-1000-webfont.ttf);
+    font-weight: 1000;
+}
+
+
+nav, h1, h2, h3{
+    font-family: "MuseoSans-700";
+}
+
+h4, h5{
+    font-family: "MuseoSans-1000";
+}
+
+p, h6, ul, #mobile-menu{
+    font-family: "MuseoSans-500";
+}
+
+p .p-bold{
+    font-family: "MuseoSans-1000";
+}
+
+p span{
+    font-family: "MuseoSans-700";
+}
+
+.font-red{
+    color: var(--custom-red) !important;
+}
+
+.font-white{
+    color: white !important;
+}
+
+#product h1{
+    font-family: "MuseoSans-300";
+    
+}
+
+input[type="email"], input[type="submit"]{
+    font-family: "MuseoSans-300";
+}
+
+h4.member-name{
+    font-family: "MuseoSans-300";
+}
+
+h6.member-position, h5.advisor-name, h5.advisor-position{
+    font-family: "MuseoSans-900";
+}

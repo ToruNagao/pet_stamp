@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="font/font.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_grid.css">
+    <link rel="stylesheet" type="text/css" href="css/loader.css">
+    <link rel="stylesheet" type="text/css" href="css/mailchimp_custom.css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="font/font_jp.css"> -->
+    <link rel="stylesheet" type="text/css" href="font/font_hiragino.css">
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_1350.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_1050.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_920.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_740.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_630.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile_menu.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_mobile_480.css">
+    <link rel="stylesheet" type="text/css" href="css/media_query/media_mobile_landscape.css">
+
+    <!-- Font Awesome CDN -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- jQuery CDN -->
+    <script src="./script/jquery-3.4.1.min.js"> </script>
+
+    <!-- ScrollMagic and GSAP -->
+    <script src="./scroll-magic-kit/ScrollMagic.min.js"></script>
+    <script src="./scroll-magic-kit/TimelineLite.min.js"></script>
+    <script src="./scroll-magic-kit/TimelineMax.min.js"></script>
+    <script src="./scroll-magic-kit/TweenLite.min.js"></script>
+    <script src="./scroll-magic-kit/TweenMax.min.js"></script>
+    <script src="./scroll-magic-kit/animation.gsap.js"></script>
+    <script src="./scroll-magic-kit/debug.addIndicators.min.js"></script>
+
+
+    <!-- AOS -->
+
+    <script src="./script/animation.js"></script>
+    <script src="./script/rotate_scanner.js"></script>
+    <script src="./script/mobile_menu.js"></script>
+  
+
+    <title>Pet Stamp - すべてのペット好きのためのプラットフォーム</title>
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="loader">
+        <!-- <div class="container" id="loading-logo-container">
+                <img src="/img/loading_logo.png" id="loading-logo" alt="">
+        </div>
+       <div class="container" id="loading-logo-bw-container">
+            <img src="/img/loading_logo_bw.png" id="loading-logo-bw"alt="">
+       </div> -->
+        <img src="./img/loading_circles.gif" alt="">
+
+    </div>
+    <header>
+        <div id="overlay" class=""></div>
+        <nav>
+            <img src="./img/logo_h_white.png" id="nav-logo" alt="">
+            <ul id='nav-menu'>
+                <a href="#benefit-anchor">
+                    <li style="padding-left: 40px">BENEFITS</li>
+                </a>
+                <a href="#product-anchor">
+                    <li>アプリ + スキャナー</li>
+                </a>
+                <a href="#comparison-anchor">
+                    <li>サービス</li>
+                </a>
+                <a href="#perks-anchor">
+                    <li>プレミアム</li>
+                </a>
+                <a href="#team-anchor">
+                    <li>チーム</li>
+                </a>
+                <a href="#benefit-anchor">
+                    <li><span>JOIN US</span></li>
+                </a>
+            </ul>
+        </nav>
+        <div id="fixed-nav-container">
+            <div id="fixed-nav">
+                <ul id='nav-menu'>
+                    <a href="#benefit-anchor">
+                        <li id="benefit">BENEFITS</li>
+                    </a>
+                    <a href="#product-anchor">
+                        <li id="app">アプリ + スキャナー</li>
+                    </a>
+                    <a href="#comparison-anchor">
+                        <li id="comparison">サービス</li>
+                    </a>
+                    <a href="#perks-anchor">
+                        <li id="premium">プレミアム</li>
+                    </a>
+                    <a href="#team-anchor">
+                        <li id="team">チーム</li>
+                    </a>
+                    <a href="#opt-in-anchor">
+                        <li id="join-us"><span>JOIN US</span></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="mobile-menu">
+            <div class="icon-container">
+                <div id="bar-1" class="bar"></div>
+                <div id="bar-2" class="bar"></div>
+                <div id="bar-3" class="bar"></div>
+            </div>
+            <div class="menu-container">
+                <div class="menu-items">
+                    <div>
+                        <a href="#benefit-anchor" onclick="closeMobileMenu()">
+                            BENEFITS
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#product-anchor" onclick="closeMobileMenu()">
+                            アプリ + スキャナー
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#comparison-anchor" onclick="closeMobileMenu()">
+                            サービス
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#perks-anchor" onclick="closeMobileMenu()">
+                            プレミアム
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#team-anchor" onclick="closeMobileMenu()">
+                            チーム
+                        </a>
+                    </div>
+                    <div class="emphasis">
+                        <a href="#opt-in-anchor" onclick="closeMobileMenu()">
+                            JOIN US
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="back-to-top-btn">
+
+        </div>
+
+        <div id="caption" class="content-area">
+            <h3><span class="font-white">ペットと人が</span></h3>
+            <h1><span class="font-red">幸せに共生する
+                </span></h1>
+            <h3><span class="font-red">AIドリブンプラットフォーム</span></h3>
+        </div>
+        <div id="play-store-badge">
+            <img src="./img/google-play-badge-soon.png" alt="">
+            <img src="./img/app-store-badge-soon.png" alt="">
+        </div>
+        <div id="white-box">
+
+        </div>
+        <a href="#benefit-anchor" class="scroll-down-link">
+            <h5 class="fade-in">&#8592; 詳しくみる</h5>
+        </a>
+    </header>
+
+    <div id="benefit-anchor"></div>
+    <section id="benefit" class="content-area">
+        <h2 class="heading-side-left">
+            BENEFITS
+        </h2>
+
+        <div class="grid-container">
+            <div class="grid">
+                <div class="fade-in">
+                    <img src="./img/microchip_icon.png" alt="">
+                    <h4>無料マイクロチップ<br>データベース</h4>
+                    <p>データ登録のみならずパーソナライズドサポートや特別オファーなど従来のデータベースより数歩先のサービスを提供。</p>
+                </div>
+                <div class="fade-in">
+                    <img src="./img/pet_stamp_app_icon.png" alt="">
+                    <h4>ペットスタンプ<br>アプリ</h4>
+                    <p>ペット情報の管理、里親、譲渡、SNS更にはマーケティングまで兼ね備えたペット好きのためのアプリ。</p>
+                </div>
+                <div class="fade-in">
+                    <img src="./img/beacon_icon.png" alt="">
+                    <h4>スマートスキャナー</h4>
+                    <p>スキャンした情報を即時にスマホで管理。スマホと接続可能な新型マイクロチップスキャナー。</p>
+                </div>
+                <div class="fade-in">
+                    <img src="./img/collar_icon.png" alt="">
+                    <h4>譲渡<br>返還</h4>
+                    <p>一般飼い主と保護団体そしてビジネスと垣根をこえた繋がりを生み変換率100%をサポート。</p>
+                </div>
+                <div class="fade-in">
+                    <img src="./img/paw_icon.png" alt="">
+                    <h4>非倫理的な殺処分の撤廃</h4>
+                    <p>さまざまなサービス、サポート、教育、情報発信を通じ</p>
+                </div>
+                <div class="fade-in">
+                    <img src="./img/owner_pet_icon.png" alt="">
+                    <h4>トレーサビリティーの確保</h4>
+                    <p>ブリーダーから飼い主まで一貫したマイクロチップ番号の追跡を可能にし悪質業者を公然化。</p>
+                </div>
+                <div class="fade-in">
+                    <img src="./img/house_icon.png" alt="">
+                    <h4>マーケティング<br>サポート</h4>
+                    <p>すべてのペット関連ビジネスの役に立つマーケティングツールを提供し新規顧客の獲得、顧客満足度の向上をサポート。</p>
+                </div>
+                <div class="fade-in">
+                    <img src="./img/event_icon.png" alt="">
+                    <h4>ボランティア<br>イベント告知</h4>
+                    <p></p>
+                </div>
+                <div class=''>
+                    <img src="./img/chat_icon.png" alt="">
+                    <h4>緊急連絡<br>ツール</h4>
+                    <p>自然災害発生時にも頼れるペットスタンプアプリを通じてのユーザー連絡ネットワーク。</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div id="product-anchor"></div>
+
+    <section id="product">
+        <div class="background">
+            <div class="img-container">
+                <!-- <img src="img/cat_bg.jpg" alt="" id="product-bg"> -->
+            </div>
+
+            <div class="content-area">
+                <div class="container">
+                    <div class="heading">
+                        <h1>ひとつ先の未来へ</h1>
+                        <h4 class="line-after">for Pet Lovers</h4>
+                    </div>
+                    <div class="row product-image-container">
+                        <div class="col-md-6 col">
+                            <div class="curtain-container">
+                                <div class="wrapper">
+                                    <img src="./img/product_app_0_compressed.png" alt="">
+                                </div>
+                                <div class="wrapper">
+                                    <img src="./img/product_app_compressed.png" alt="">
+                                </div>
+                                <div class="wrapper">
+                                    <img src="./img/product_app_2_compressed.png" alt="">
+                                </div>
+                                <div class="wrapper">
+                                    <img src="./img/product_app_3_compressed.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col">
+                            <img src="./img/product_scanner_compressed.png" alt="" id="product-scanner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="row">
+            <div id="red-circle">
+                <h3>+</h3>
+            </div>
+                <div class="col col-md-6 col-sm-6">
+                    <h2>ペットスタンプアプリ</h2>
+                    <h4>無料ダウンロード</h4>
+                    <h4>iOS/アンドロイド対応</h4>
+                    <h4>犬猫飼い主に役に立つ機能満載</h4>
+                    <hr>
+                    <p class=''>
+                        複数のペット情報の登録、管理</br>
+                        日々の記録やオンライン獣医によるペットの健康管理</br>
+                        マーケティング、イベント、特別オファー</br>
+                        地域ごとの迷子犬猫や保護犬猫情報</br>
+                        適切なオーナーによる譲渡のサポート</br>
+                        メッセンジャーや緊急連絡用のコミュニケーションツール</br>
+                        トレーサビリティーの透明性の確保</br>
+                    </p>
+                </div>
+                <div class="col col-md-6 col-sm-6">
+                    <div class="mobile-visible media-740-visible">
+                        <img src="./img/product_scanner_compressed.png" alt="">
+                    </div>
+                    <h2>スマートスキャナー</h2>
+                    <h4>1台で2つの機能</h4>
+                    <h4>BluetoothもしくはUSBでスマホと</h4>
+                    <h4>ビーコン同時搭載</h4>
+                    <hr>
+                    <p class=''>
+                        防水加工 & 高耐久デザイン</br>
+                        <span>スキャンモード</span>: マイクロチップ番号をスキャン</br>
+                        <span>散歩モード</span>: </br>
+                        <span>医療モード</span>: 医療履歴の記録、追加、参照</br>
+                        <span>チェックインモード</span>: イベントやビジネスでのチェックイン</br>
+                        <span>ビーコンモード</span>: 近接マーケティング</br>
+                        <span>入出荷モード</span>: 入出荷履歴の管理</br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="beacon-anchor"></div>
+    <section id="beacon">
+
+        <h1 class="heading-side-right line-after font-white">Beacon</h1>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 col">
+                    <img src="./img/Wireless.png" alt="" id="scanner-gif-bg">
+                    <!-- <img src="/img/product_beacon.png" alt=""> -->
+                    <img src="./img/scanner_360_compressed/_Layer-1.png" id="scanner-gif" alt=""
+                        style="height: 400px; width: auto;">
+                </div>
+                <div class="col-md-8 col">
+                    <p class="font-white">
+                        <span class="bold">
+                            店舗などの施設内にビーコン信号を発する端末を設置する事により、周辺のスマホユーザーへ情報プッシュ配信を
+                            行う事を可能にする「近距離無線通信」です。
+                        </span>
+                    </p>
+                    <p class="p-lg font-white">
+                        ペットスタンプはこのビーコン技術をスキャナーに組み込むことにより災害時の緊急連絡や
+                        保護センターの保護犬猫情報の配信やビジネスユーザーのマーケティングツールとして、今までにない
+                        新たなマイクロチップスキャナーの活用方法を提供します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7 col-sm-6 col-xs-12">
+                    <div class="wrapper-relative">
+                        <div class="col col-md-6 col-sm-7 col-xs-6">
+
+
+                            <h5>メッセージ & 緊急連絡</h5>
+                            <p id='bubble-1'>
+                                吹田市体育館にて避難受け入れ開始。ペット込み約40世帯分確保。
+                            </p>
+
+                            <img src="./img/beacon_japan_map.gif" alt="" id="map">
+                        </div>
+                        <div class="col col-md-6 col-sm-5 col-xs-6">
+                            <h5>ジオフェンシング</h5>
+
+                            <ul id="bubble-2">
+                                <li>近隣への福利厚生オファー</li>
+                                <li>イベント & 教育セッション情報</li>
+                                <li>アンケート & 投票</li>
+                                <li>フォスター & 譲渡情報</li>
+                                <li>チェックイン $ ロイヤリティプログラム</li>
+                                <li>病院の質問表 & 待ち時間</li>
+                                <li>ボランティア活動告知</li>
+                                <li>空港などでのペット関連情報</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col col-md-5 col-sm-6 col-xs-12">
+                    <div class="wrapper">
+                        <h5>マーケティングツール</h5>
+                        <p id="bubble-3">
+                            本日限り！ ペットストア「しっぽ」にて猫砂20%割引中。
+                        </p>
+                        <img src="./img/beacon_marketing.png" alt="" id="emergency">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="comparison">
+        <div id="comparison-anchor"></div>
+        <div class="content-area">
+            <div class="heading">
+                <h4 class="line-after">service comparison &</h4>
+                <h1 class="">ペットスタンプの利点</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <img src="./img/logo_h.png" alt="" class="logo-img">
+                </div>
+                <div class="col-md-8 col-sm-8">
+                    <p>
+                        従来のマイクロチップは主に迷子時の飼い主発見という様な使い道でしか利用されていませんでしたが、ペットスタンプ
+                        は迷子時のみならず、犬猫を新たな家族として受けれた時点から最後まで様々なサービスや価値を提供します。<br><br>
+                        さらに機械学習やAI技術を組み込むことペットと人の両方にとって必要なサポートを提供します。<br><br>
+                    </p>
+                    <div class="row">
+                        <div class="col col-md-6 col-xs-6 font-red">
+
+
+                            <h6>ペットスタンプ<br>継続的なサービスの提供</h6>
+                        </div>
+                        <div class="col col-md-6 col-xs-6">
+
+
+                            <h6>従来のサービス<br>迷子時のみに利用</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="img-container">
+            <img src="./img/compare_jp.png" alt="" style="width: 100%; margin-top:5%;">
+        </div>
+    </section>
+
+
+
+    <div id="usecase-anchor"></div>
+    <section id='usecase'>
+        <div class="grid">
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_1.jpg" alt="">
+                    <div class="container abs-right-1">
+                        <h4>一般飼い主</h4>
+                        <p>ペットの健康記録から迷子犬猫の発見さらにお気に入りのグルーマーの予約まで
+
+                            <br>
+                            <span>
+                                あなたとペットに必要な「何でも」をサポート
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_2.jpg" alt="">
+                    <div class="container">
+                        <h4>保護団体</h4>
+                        <p>
+                            スキャンするだけで迷子・保護犬猫の飼い主情報を即座に確認
+
+                            <br>
+                            <span>
+                                さらには譲渡情報の発信やボランティア募集といったコミュニケーションツールとしても利用可能
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_3.jpg" alt="">
+                    <div class="container abs-right-2 abs-right-mobile">
+                        <h4>ブリーダー</h4>
+                        <p>
+                            アプリひとつで犬猫の個体管理台帳や受け渡しを簡単に管理
+                            <br>
+                            <span>より多くの個体管理台帳を記録する事により
+                                優良ブリーダーとして評価を向上</span>
+
+
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_4.jpg" alt="">
+                    <div class="container abs-left-2 abs-left-mobile">
+                        <h4 align="right">獣医</h4>
+                        <p>
+                            マイクロチップをスキャンするだけで、その犬猫に関する
+                            医療記録を瞬時に参照
+                            <br>
+                            <span>
+                                さらにオンライン獣医として活動する事により
+                                新たな顧客獲得をサポート
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_5.jpg" alt="">
+                    <div class="container abs-right-1">
+                        <h4>ペットショップ</h4>
+                        <p>
+                            新規入荷や顧客のペットをスキャンするだけで
+                            データベース上に記録されているそのペットの共有情報を参照<br>
+                            <span>
+                                ペットスタンププラットフォームを利用する事によりオンライン・オフライン両方のマーケーティングをサポート
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="each">
+                    <img src="./img/usecase_grid_6.jpg" alt="">
+                    <div class="container">
+                        <h4>その他ペット関連ビジネス</h4>
+                        <p>
+                            グルーマー、ペットホテル、ドッグウォーカー、トレーナー、フード・用品販売業者など
+                            <br>
+                            <span>
+                                ペット関連すべてのビジネスのマーケーティングをプラットフォーム上にてサポート
+                  
+
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="perks-anchor"></div>
+    <section id="perks" style="background: #eff4f6">
+        <div class="content-area content-area-v">
+            <div class="heading">
+                <h4 class="line-after">
+                    special deals
+                </h4>
+                <h1 class="">
+                    福利厚生オファー・プレミアムサービス
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 col">
+                    <img src="./img/perks_1.png" alt="">
+                    <h4 class="abs-left-1">
+                        ペットコミュニティ
+                    </h4>
+                    <p>
+                    ペットが捨てられてしまう主な原因としては経済的な理由があげられます。ペットスタンプはさまざまなサービスと提供する事により、
+                    特別オファーや割引サービスを提供し飼い主をサポートします。
+                    
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 col">
+                    <img src="./img/perks_2.png" alt="">
+                    <h4>
+                        ビジネス
+                    </h4>
+                    <p>
+                        プレミアムユーザーはプラットフォーム上の多種多様なマーケティングツールマーケーティングを通して
+                        新規顧客やビジネスの成長の加速をサポート。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id="team-anchor"></div>
+    <section id="team">
+        <div class="content-area content-area-v">
+            <div class="heading">
+                <h4 class="line-after">about us & the</h4>
+                <h1>Team behind it</h1>
+            </div>
+
+            <div class="row flex-center">
+                <div class="col col-6-md col-sm-6 col-xs-12">
+                    <h4 class="font-red"><span>
+
+                            ペットスタンプは新たなマイクロチップデータベースとスマートスキャナーの開発を目指している
+                            サンフランシスコを基盤としてスタートアップです。
+                            
+                        </span> </h4>
+
+                </div>
+                <div class="col col-6-md col-sm-6 col-xs-12">
+                    <p>
+                        <span>
+                            さまざまばサービスを通じより多くのペットが飼い主とともに一生幸せに
+                            暮らせるサポートを提供します。
+                            
+                        </span><br><br>
+                        <p>
+                            やむを得ずペットを手放さないといけない際にも最大限の里親探しのサポートを提供し、
+                            保護センターへの持ち込みやペットの廃棄を未然に防ぎます。
+                           <br><br>
+                            <span>返還率100%</span><br>
+                            私たちは返還率の向上をサポートし殺処分の必要のないペットと人間にとって幸せな社会を構築します。
+                            
+                        </p>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row member-container">
+                <div class="col col-md-4 col-sm-4 col-xs-6">
+                    <div class="member">
+                        <img src="./img/yasu_profile.png" alt="">
+                        <h4 class="member-name">
+                            藤井ヤスオ
+                        </h4>
+                        <h6 class="member-position">
+                            創設者
+                        </h6>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-4 col-xs-6">
+                    <div class="member">
+                        <img src="./img/toru_profile.png" alt="">
+                        <h4 class="member-name">
+                            長尾徹
+                        </h4>
+                        <h6 class="member-position">
+                            共同創設者 / ウェブ開発
+                        </h6>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-4 col-xs-12">
+                    <div class="member">
+                        <img src="./img/sawako_profile.png" alt="">
+                        <h4 class="member-name">
+                           　乘越早和子
+                        </h4>
+                        <h6 class="member-position">
+                            共同創設者 / 広報
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="advisors">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            トレーシー・サーストン
+                        </h5>
+                        <h5 class="advisor-position">
+                            Senior Director
+                        </h5>
+                        <p class="advisor-company">
+                            Humane Society of the United States
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            飯田恭久
+                        </h5>
+                        <h5 class="advisor-position">
+                            代表
+                        </h5>
+                        <p class="advisor-company">
+                            楽天USA
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yoshihiro Shimizu
+                        </h5>
+                        <h5 class="advisor-position">
+                            代表
+                        </h5>
+                        <p class="advisor-company">
+                            EQBO INC.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Kazumi Iino
+                        </h5>
+                        <h5 class="advisor-position">
+                            日米ビジネスエキスパート
+                            US and Japanese Business Expert
+                        </h5>
+                        <p class="advisor-company">
+                            元JETRO
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                          
+                            パウラ・マーティンズ
+                        </h5>
+                        <h5 class="advisor-position">
+                            UI/UXデザイナー
+                        </h5>
+                        <p class="advisor-company">
+                            Design co
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            菊池愛
+                        </h5>
+                        <h5 class="advisor-position">
+                            日米プロフェッショナルグルーマー
+                            
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col col-md-4 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Tracey Thurston
+                        </h5>
+                        <h5 class="advisor-position">
+                            Senior Director
+                        </h5>
+                        <p class="advisor-company">
+                            Human Society of the United States
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yaz Iida
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            Rakuten USA
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yoshihiro Shimizu
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            EQBO INC.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                    <div class="col col-md-4 col-sm-6 col-xs-6">
+                            <div class="advisor">
+                                <h5 class="advisor-name">
+                                    Kazumi Iino
+                                </h5>
+                                <h5 class="advisor-position">
+                                    US and Japanese Business Expert
+                                </h5>
+                                <p class="advisor-company">
+                                    Former JETRO
+                                </p>
+                            </div>
+                        </div>
+                    <div class="col col-md-4 col-sm-6 col-xs-6">
+                        <div class="advisor">
+                            <h5 class="advisor-name">
+                                Paula Martins
+                                
+                               
+                            </h5>
+                            <h5 class="advisor-position">
+                                UI/UX Designer
+                            </h5>
+                            <p class="advisor-company">
+                                Design co
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-md-3 col-sm-6 col-xs-6">
+                            <div class="advisor">
+                                <h5 class="advisor-name">
+                                    Ai Kikuchi
+                                </h5>
+                                <h5 class="advisor-position">
+                                    Professional Groomer in US and Japan
+                                </h5>
+                                <p class="advisor-company">
+        
+                                </p>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="row">
+                    
+                </div> -->
+            <!-- <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Tracey Thurston
+                        </h5>
+                        <h5 class="advisor-position">
+                            Senior Director
+                        </h5>
+                        <p class="advisor-company">
+                            Human Society of the United States
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yaz Iida
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            Rakuten USA
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Yoshihiro Shimizu
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            EQBO INC.
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Kazumi Iino
+                        </h5>
+                        <h5 class="advisor-position">
+                            US and Japanese Business Expert
+                        </h5>
+                        <p class="advisor-company">
+                            Former JETRO
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Paula Martins
+                            
+                           
+                        </h5>
+                        <h5 class="advisor-position">
+                            UI/UX Designer
+                        </h5>
+                        <p class="advisor-company">
+                            Design co
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Frank Shin
+                        </h5>
+                        <h5 class="advisor-position">
+                            Japan Branch Office President
+                        </h5>
+                        <p class="advisor-company">
+                            INCREZ GLOBAL
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Tetsuya Nagaoka
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            LongHill Inc
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Kohei Toda
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            ZiNC INC. Former Lion Corporation
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Shoji Matsuki
+                        </h5>
+                        <h5 class="advisor-position">
+                            Auditor
+                        </h5>
+                        <p class="advisor-company">
+                            Shippo-mura Animal Organization-Kanagawa
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Junichi Iida
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            OPT Creation
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Naotaka Yano
+                        </h5>
+                        <h5 class="advisor-position">
+                            Veterinarian and Director
+                        </h5>
+                        <p class="advisor-company">
+                            VET'S - EHIME
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Takanori Kasai
+                        </h5>
+                        <h5 class="advisor-position">
+                            President
+                        </h5>
+                        <p class="advisor-company">
+                            SurfCar Inc
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Ken Matsubara
+                        </h5>
+                        <h5 class="advisor-position">
+                            Animal Welfara Consultant
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Ai Kikuchi
+                        </h5>
+                        <h5 class="advisor-position">
+                            Professional Groomer in US and Japan
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Asano San
+                        </h5>
+                        <h5 class="advisor-position">
+                            Breeder in Japan
+                        </h5>
+                        <p class="advisor-company">
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-sm-6 col-xs-6">
+                    <div class="advisor">
+                        <h5 class="advisor-name">
+                            Masaoa Tatsuzaki
+                        </h5>
+                        <h5 class="advisor-position">
+                            Vice-Diretor
+                        </h5>
+                        <p class="advisor-company">
+                            Japanese Government
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <h2 class="heading-side-right line-after">
+            ADVISORS
+        </h2>
+
+    </section>
+
+    <div id="opt-in-anchor"></div>
+    <section id="opt-in" class="content-area content-area-v">
+        <!-- <img src="./img/sign_up_bg.png" alt=""> -->
+        <div class="heading">
+            <h4 class="line-after">join us to the</h4>
+            <h1>ペット好きコミュニティに参加</h1>
+        </div>
+        <p>
+            The more people know about Pet Stamp,
+            the larger our community will become.
+            And the more we can do toghether for all the dogs and cats around us.
+            <span>Let's share the happines!</span>
+        </p>
+        <div class="sign-up">
+            <form
+                action="https://petnumber.us3.list-manage.com/subscribe/post?u=91edc2ac1798ecff62168b45e&amp;id=163dd5886e"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+
+                    <div class="mc-field-group">
+                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL"
+                            placeholder="Eメール">
+                    </div>
+
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_91edc2ac1798ecff62168b45e_163dd5886e" tabindex="-1" value=""></div>
+                    <input type="submit" value="参加する" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
+
+        </div>
+        </form>
+        </div>
+
+    </section>
+    <footer>
+        <div class="row" id="mc_embed_signup">
+            <div class="col col-md-6 col-sm-12 col-xs-4">
+                <h5 class="font-white">無料ダウンロード&#8594;</h5>
+            </div>
+            <div class="col col-md-6 col-sm-12 col-xs-8">
+
+                <img src="./img/google-play-badge-soon.png" alt="">
+                <img src="./img/app-store-badge-soon.png" alt="">
+            </div>
+        </div>
+
+        </div>
+        <div class="row">
+            <ul id="footer-nav-menu">
+                <a href="#benefit-anchor">
+                    <li>BENEFITS</li>
+                </a>
+                <a href="#product-anchor">
+                    <li>アプリ + スキャナー</li>
+                </a>
+                <a href="#comparison-anchor">
+                    <li>サービス</li>
+                </a>
+                <a href="#perks-anchor">
+                    <li>プレミアム</li>
+                </a>
+                <a href="#team-anchor">
+                    <li>チーム</li>
+                </a>
+                <a href="#benefit-anchor">
+                    <li><span>JOIN US</span></li>
+                </a>
+            </ul>
+        </div>
+        <div class="row">
+            <div>
+                <img src="./img/logo_h_white.png" id="footer-logo" alt="">
+            </div>
+            <div>
+                <p class="copy-right">&copy;PET STAMP 2019 ALL RIGHTS RESERVED.</p>
+
+            </div>
+        </div>
+    </footer>
+</body>

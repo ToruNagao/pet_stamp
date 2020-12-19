@@ -1,0 +1,44 @@
+.loader{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: 0.4s;
+}
+
+.loader.done{
+    opacity: 0;
+    z-index: -10;
+}
+
+.loader .container{
+    overflow: hidden;
+    position: absolute;
+}
+
+.loader .container, .loader img{
+    height: 127px;
+}
+
+.loader .container#loading-logo-container{
+    z-index: 100 !important;
+
+}
+
+.loader img{
+    width: auto;
+    height: 100px;
+}
+
+.loader img#loading-logo{
+  z-index: 100;
+}
+
+.loader img#loading-logo-bw{
+    z-index: 10;
+}
