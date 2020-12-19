@@ -1,19 +1,11 @@
 @media (max-width: 920px) {
 
-    #mobile-menu{
-        display: block !important;
-    }
-
-    div#fixed-nav-container.visible {
-        display: none !important;
-    }
+    
 
     h1 {
         font-size: 3rem;
     }
-    nav ul#nav-menu {
-        display: none;
-    }
+
 
     header #white-box{
         width: 70%;
@@ -27,8 +19,8 @@
     }
     #red-circle {
         display: none;
+    }
 
-          }
     section#product .row p {
         line-height: 2;
         font-size: 0.9rem;
@@ -57,10 +49,6 @@
         max-width: 65%;
         margin: 20px;
     }
-    /* section#usecase .grid .each .container p {
-        background: rgba(255, 255, 255, 0.8);
-       
-    } */
 
     section#usecase .grid .each .container h4{
         margin: 10px 0;
