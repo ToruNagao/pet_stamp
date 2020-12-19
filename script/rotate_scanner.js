@@ -13,7 +13,7 @@ $(document).ready(function () {
    
     for (var i = totalImagas; i > 0; i--) {
         images[imageIndex] = new Image();
-        imagePath = './img/scanner_360_compressed/Layer-' + i + '.png';
+        imagePath = './img/scanner_360_compressed/layer-' + i + '.png';
 
         images.push(imagePath);
         images[imageIndex].src = imagePath;
