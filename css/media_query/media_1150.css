@@ -1,0 +1,13 @@
+@media (max-width: 1150px){
+    #mobile-menu{
+        display: block !important;
+    }
+
+    div#fixed-nav-container.visible {
+        display: none !important;
+    }
+
+    nav ul#nav-menu {
+        display: none;
+    }
+}
