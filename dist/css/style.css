@@ -439,6 +439,7 @@ section#benefit .grid-container {
 section#benefit .grid-container .grid {
     display: -ms-grid;
     display: grid;
+    gap: 40px;
     /* -ms-grid-columns: (1fr)[3]; */
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
