@@ -13,20 +13,10 @@ $(document).ready(function () {
    
     for (var i = totalImagas; i > 0; i--) {
         images[imageIndex] = new Image();
-        imagePath = './img/scanner_360_compressed/_Layer-' + i + '.png';
+        imagePath = './img/scanner_360_compressed/Layer-' + i + '.png';
 
         images.push(imagePath);
         images[imageIndex].src = imagePath;
-    //    if(urlExists(imagePath)){
-    //        
-    //    } else{
-    //        images.push('./img/scanner_360_png8_resize/_Layer-1.png');
-     //       images[imageIndex].src = './img/scanner_360_png8_resize/_Layer-1.png';
-     //   }
-        
-
-        // loadingImageHandler(i);
-        
         images[imageIndex].addEventListener('load', loadCounter, function () {
 
         })
@@ -45,29 +35,6 @@ $(document).ready(function () {
             $('.loader').addClass('done');
         }
     }
-
-   // function urlExists(url)
-   // {
-   //     var http = new XMLHttpRequest();
-   //     http.open('HEAD', url, false);
-   //     http.send();
-    //    return http.status!=404;
-    //}
-
-
-
-
-    // var imgIndex = 127;
-    // for(var i = 1; i < 126; i++){
-    //     console.log('./img/scanner_360_final/scanner_final_2_0' + imgIndex + '_Layer-' + i + '.png')
-    //     if(i <= 9){
-    //       images.push('./img/scanner_360_final/scanner_final_2_0' + imgIndex-- + '_Layer-' + i + '.png');
-    //     } else if(i >= 10 && i <= 99){
-    //       images.push('./img/scanner_360_final/scanner_final_2_00' + imgIndex-- + '_Layer-' + i + '.png');
-    //     } else if(i >= 100 && i <= 156){
-    //       images.push('./img/scanner_360_final/scanner_final_2_000' + imgIndex-- + '_Layer-' + i + '.png');
-    //     }      
-    //   }
 
     // TweenMax can tween any property of any object. We use this object to cycle through the array
     var obj = { curImg: 1 };
